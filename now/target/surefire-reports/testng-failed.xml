@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="crm_Lead_Test.Lead_To_Contact_testNG_Test">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="leadConvertToContact_Test"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- crm_Lead_Test.Lead_To_Contact_testNG_Test -->
+      <class name="crm_ContactTest.All_Contact_testNG_Test">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="contactWithOrg"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- crm_ContactTest.All_Contact_testNG_Test -->
+      <class name="crm_Product_Test.All_Product_TestNG_Test">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="createOrgAndProductAddToInvoice"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- crm_Product_Test.All_Product_TestNG_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
