@@ -57,7 +57,7 @@ public class BaseClass {
 		String Password = System.getProperty("password",fu.getPropertyFile("password"));
 		LoginPage lp=new LoginPage(driver);
 		lp.login(Username, Password, URL, wu);
-		UtilityClassObject.setDriver(driver);
+		
 	}
 	@AfterMethod(groups={"regression","smoke"})
 	public void afterMethod() {
