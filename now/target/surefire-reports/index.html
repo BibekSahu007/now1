@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Bibek Sahu\eclipse-workspace\selenium_a4\Maven Project\CRM_GUI_Framework2\Reginal_group_testng.xml</span>
+                    <span>C:\Users\Bibek Sahu\git\repository10\now\Smoke_testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crm_ContactTest.All_Contact_testNG_Test" class="method navigator-link" hash-for-method="contactWithOrg">contactWithOrg</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="crm_Product_Test.All_Product_TestNG_Test" class="method navigator-link" hash-for-method="ProductToSalesOrder">ProductToSalesOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crm_Product_Test.All_Product_TestNG_Test" class="method navigator-link" hash-for-method="createOrgAndProductAddToInvoice">createOrgAndProductAddToInvoice</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="crm_Lead_Test.Lead_To_Contact_testNG_Test" class="method navigator-link" hash-for-method="leadConvertToContact_Test">leadConvertToContact_Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="crm_Product_Test.All_Product_TestNG_Test" class="method navigator-link" hash-for-method="covert_product_to_Quote">covert_product_to_Quote</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,39 +132,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createOrgAndProductAddToInvoice">
-                  </a> <!-- createOrgAndProductAddToInvoice -->
-                  <span class="method-name">createOrgAndProductAddToInvoice</span>
+                  <a name="ProductToSalesOrder">
+                  </a> <!-- ProductToSalesOrder -->
+                  <span class="method-name">ProductToSalesOrder</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">crm_Lead_Test.Lead_To_Contact_testNG_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="leadConvertToContact_Test">
-                  </a> <!-- leadConvertToContact_Test -->
-                  <span class="method-name">leadConvertToContact_Test</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">crm_ContactTest.All_Contact_testNG_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="contactWithOrg">
-                  </a> <!-- contactWithOrg -->
-                  <span class="method-name">contactWithOrg</span>
+                  <a name="covert_product_to_Quote">
+                  </a> <!-- covert_product_to_Quote -->
+                  <span class="method-name">covert_product_to_Quote</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,30 +149,26 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Bibek Sahu\eclipse-workspace\selenium_a4\Maven Project\CRM_GUI_Framework2\Reginal_group_testng.xml</span>
+            <span class="header-content">C:\Users\Bibek Sahu\git\repository10\now\Smoke_testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;crm_Product_Test.All_Product_TestNG_Test&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;createOrgAndProductAddToInvoice&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- crm_Product_Test.All_Product_TestNG_Test --&gt;
-      &lt;class name=&quot;crm_ContactTest.All_Contact_testNG_Test&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;contactWithOrg&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- crm_ContactTest.All_Contact_testNG_Test --&gt;
-      &lt;class name=&quot;crm_Lead_Test.Lead_To_Contact_testNG_Test&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;leadConvertToContact_Test&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- crm_Lead_Test.Lead_To_Contact_testNG_Test --&gt;
+      &lt;class name=&quot;crm_Product_Test.All_Product_TestNG_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -214,7 +182,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,22 +193,14 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">createOrgAndProductAddToInvoice</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">contactWithOrg</span>
+                <span class="method-in-group-name">ProductToSalesOrder</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">leadConvertToContact_Test</span>
+                <span class="method-in-group-name">covert_product_to_Quote</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -260,24 +220,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createOrgAndProductAddToInvoice')
+data.setCell(0, 1, 'ProductToSalesOrder')
 data.setCell(0, 2, 'crm_Product_Test.All_Product_TestNG_Test')
-data.setCell(0, 3, 52423);
+data.setCell(0, 3, 48673);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'leadConvertToContact_Test')
-data.setCell(1, 2, 'crm_Lead_Test.Lead_To_Contact_testNG_Test')
-data.setCell(1, 3, 47649);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'contactWithOrg')
-data.setCell(2, 2, 'crm_ContactTest.All_Contact_testNG_Test')
-data.setCell(2, 3, 33863);
+data.setCell(1, 1, 'covert_product_to_Quote')
+data.setCell(1, 2, 'crm_Product_Test.All_Product_TestNG_Test')
+data.setCell(1, 3, 46219);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -292,39 +248,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">crm_Product_Test.All_Product_TestNG_Test</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">covert_product_to_Quote</span>
-                <br/>
-                <span class="ignored-method-name">ProductToSalesOrder</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">crm_Lead_Test.Lead_To_Contact_testNG_Test</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">crm_ContactTest.All_Contact_testNG_Test</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">createContactAndAddTroubleTicket_Test</span>
-                <br/>
-                <span class="ignored-method-name">createContact</span>
-                <br/>
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">createContactWithDate</span>
+                <span class="ignored-method-name">createOrgAndProductAddToInvoice</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -343,76 +273,39 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">1205 ms</span>
+                <span class="method-start">1474 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">3719 ms</span>
+                <span class="method-start">4466 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createOrgAndProductAddToInvoice</span>
-                <span class="method-start">10295 ms</span>
+                <span class="method-name">ProductToSalesOrder</span>
+                <span class="method-start">6967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">62722 ms</span>
+                <span class="method-start">55652 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">65879 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">crm_ContactTest.All_Contact_testNG_Test</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">66337 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">67548 ms</span>
+                <span class="method-start">58405 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">contactWithOrg</span>
-                <span class="method-start">73859 ms</span>
+                <span class="method-name">covert_product_to_Quote</span>
+                <span class="method-start">64073 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">107724 ms</span>
+                <span class="method-start">110293 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">110543 ms</span>
+                <span class="method-start">112927 ms</span>
               </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">crm_Lead_Test.Lead_To_Contact_testNG_Test</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">111037 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">112260 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">leadConvertToContact_Test</span>
-                <span class="method-start">114117 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">161769 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">164279 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">crm_Product_Test.All_Product_TestNG_Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">164713 ms</span>
+                <span class="method-start">113468 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -110,7 +110,7 @@
             <configuration>
                 <suiteXmlFiles>
                     <!-- Path relative to the project root -->
-                    <suiteXmlFile>Smoke_testng.xml</suiteXmlFile>
+                    <suiteXmlFile>smoke1testng.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
         </plugin>
