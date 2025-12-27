@@ -39,7 +39,7 @@ public class BaseClass {
 	@BeforeClass(groups={"regression","smoke"})
 	public void beforeClass() throws IOException {
 		System.out.println("======Open Browser======");
-		String Browser = fu.getPropertyFile("browser");
+		String Browser = System.getProperty("browser",fu.getPropertyFile("browser"));
 		if(Browser.equals("firefox")) {
 			driver= new FirefoxDriver();
 		}
@@ -52,9 +52,9 @@ public class BaseClass {
 	@BeforeMethod(groups={"regression","smoke"})
 	public void beforeMethod() throws IOException {
 		System.out.println("======Log In======");
-		String URL = fu.getPropertyFile("url");
-		String Username = fu.getPropertyFile("username");
-		String Password = fu.getPropertyFile("password");
+		String URL = System.getProperty("url",fu.getPropertyFile("url"));
+		String Username = System.getProperty("username",fu.getPropertyFile("username"));
+		String Password = System.getProperty("password",fu.getPropertyFile("password"));
 		LoginPage lp=new LoginPage(driver);
 		lp.login(Username, Password, URL, wu);
 		UtilityClassObject.setDriver(driver);
